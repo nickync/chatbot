@@ -56,8 +56,8 @@ export default function ChatWindow() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-6">
-      <div className="w-full max-w-2xl bg-white shadow-lg rounded-2xl p-4 flex flex-col h-[80vh]">
+    <div className="flex w-full items-center justify-center h-screen bg-black">
+      <div className="flex flex-col h-full pt-20 pb-4 px-4">
         <MessageList messages={messages} loading={loading} />
         <InputBox onSend={sendMessage} disabled={loading} />
       </div>

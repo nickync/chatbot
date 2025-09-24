@@ -1,13 +1,16 @@
-
-import './App.css';
-import ChatWindow from './components/ChatWindow';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ChatWindow from "./components/ChatWindow";
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex flex-col">
+      <Header />
       <ChatWindow />
+      <Footer />
     </div>
   );
 }
 
 export default App;
+

@@ -11,7 +11,7 @@ export default function InputBox({ onSend, disabled }) {
   };
 
   return (
-    <div className="flex space-x-2">
+    <div className="space-x-2 flex align-center">
       <input
         type="text"
         className="flex-1 border rounded-lg p-2"
