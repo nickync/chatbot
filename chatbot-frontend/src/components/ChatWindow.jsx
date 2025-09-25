@@ -2,7 +2,7 @@ import { useState } from "react";
 import MessageList from "./MessageList";
 import InputBox from "./InputBox";
 
-export default function ChatWindow() {
+export default function ChatWindow({darkMode}) {
   const [messages, setMessages] = useState([
     { role: "system", content: "You are a helpful AI assistant." }
   ]);
@@ -56,7 +56,7 @@ export default function ChatWindow() {
   };
 
   return (
-    <div className="flex w-full items-center justify-center h-screen bg-black">
+    <div className={`flex w-full items-center justify-center h-screen ${darkMode ? "bg-black" : "bg-gray-100"}`}>
       <div className="flex flex-col h-full pt-20 pb-4 px-4">
         <MessageList messages={messages} loading={loading} />
         <InputBox onSend={sendMessage} disabled={loading} />
