@@ -6,17 +6,18 @@ export default function Header({darkMode, setDarkMode}) {
       <div className="text-white text-3xl font-bold absolute left-1/2 transform -translate-x-1/2">Chat Bot</div>
       <p className="text-black text-1xl font-extralight italic">LLM Model: llama3.1:70b</p>
       <div className="ml-auto">
-        <button onClick={() => setDarkMode(!darkMode)} className="ml-4 p-2 rounded"> {
-          darkMode ? (
-            <>
-              <FaSun />
-            </> 
-            ) : (
-            <>
-              <FaMoon />
-            </>
-            )
-            }
+        <button onClick={() => setDarkMode(!darkMode)} className="ml-4 p-2 rounded"> 
+          {
+            darkMode ? (
+              <>
+                <FaSun />
+              </> 
+              ) : (
+              <>
+                <FaMoon />
+              </>
+              )
+          }
           
           
         </button>  
